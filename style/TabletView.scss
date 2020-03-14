@@ -1,124 +1,3 @@
-$breakpoint-desktopAndLaptops: 1025px;
-$breakpoint-tablets: 1025px;
-
-$black:black;
-$red:#FE0000;
-$blue:#1A257A;
-$lightBlue:#62C2C9;
-$blueish:#0C62B4;
-$right:right;
-$left:left;
-$boxesMarginDesktop:0% 1% 1% 2%;
-$boxesMargin:0% 1% 2% 1%;
-$boxesMarginMobile:0% 2% 5% 2%;
-body{
-    margin: 0px;
-}
-
-
-@media (min-width: $breakpoint-desktopAndLaptops) {
-    .navbar{
-        background-color: #DDDDDF;
-        .navbar-toggle{
-            display: none;
-        }
-        .main-nav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            li {
-                float: left;
-                content: ".";
-                box-shadow: 7px 0px 2px -6px #A6A6A8;
-
-                a{
-                    display: block;
-                    color: black;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    &:hover{
-                        background-color: #666;
-                    }
-                    span{
-                        border-left: 6px solid green;
-                    }
-                }
-            }
-        }
-    }     
-    #firstDivs,#seventhDiv{
-        height: 43.5%;
-        width: 15%;
-        float: $left;
-        margin:$boxesMarginDesktop;
-        background-color: $black;
-    }
-    #secondDivs, #thirdDivs,#fifthDiv,#sixthDiv,#eightDiv,#ninethDiv{
-        height: 21%;
-        width: 38%;
-        float: $left;
-        margin: $boxesMarginDesktop;
-    }
-    #fourthDiv{
-        height: 21%;
-        width: 20%;
-        float:$right;
-        margin:$boxesMarginDesktop;
-    }
-    #div3,#div6,#div10,#div11,#div15,#div17{
-        background-color: $red;
-        width: 48%;
-        height: 99%;
-        float: $left;
-    }
-    #div4,#div5,#div9,#div12,#div16,#div18{
-        float: $left;
-        background-color: $blueish;
-        width: 52%;
-        height: 100%;
-    }
-    #div5,#div9,#div14{
-        background-color:$blue;
-    }
-    #div6,#div9,#div12,#div15,#div17{
-        float:$right;
-    }
-    #div8{
-        background-color: $lightBlue;
-        width: 100%;
-        height: 100%;
-    }
-    #div12{
-        background-color: $blueish;
-    }
-    #div13{
-        height: 48%;
-        background-color: $red;
-    }
-    #div14{
-        height: 52%;
-    }
-    #div18{
-        background-color: $lightBlue;
-    }
-    #seventhDiv{
-        float: $right;
-        margin: $boxesMargin;
-    }
-    #textDiv{
-        //threeInABox boxesMargin left
-        height: 21%;
-        width: 56%;
-        background-image: url('./images/Text.png');
-        background-repeat:repeat-x;
-        background-position-y: center;
-        margin: $boxesMargin;
-        float: $left;
-    }
-}
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
@@ -214,7 +93,7 @@ body{
         }
     }
     #textDiv{
-        background: url('./images/Text2.png') no-repeat center;
+        background: url('../images/Text2.png') no-repeat center;
     }
     
 }
@@ -312,7 +191,7 @@ body{
         }
     }
     #textDiv{
-        background: url('./images/Text2.png') no-repeat center;
+        background: url('../images/Text2.png') no-repeat center;
     }
 }
  /* 
@@ -409,94 +288,7 @@ body{
         }
     }
     #textDiv{
-        background: url('./images/Text2.png') no-repeat center;
+        background: url('../images/Text2.png') no-repeat center;
     }
     
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 0px) and (max-width: 480px) {
-  
-    .navbar{
-        background-color: #fff;
-        .navbar-toggle {
-            cursor: pointer; 
-            color:#2C2B32;
-            font-size: 30px;
-            margin: 10px;
-        }
-        .main-nav {
-            list-style-type: none;
-            display: none;
-            padding: 0px;
-            li {
-                content: ".";
-                border-bottom:1px solid grey;
-                border-top:1px solid grey;
-                display: flex;
-                flex-direction: column;
-                a{
-                    color: black;
-                    padding: 18px;;
-                    text-decoration: none;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    &:hover{
-                        background-color: #676;
-                    }
-                }
-            }
-        }
-        .active {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: 0;
-            background-color:rgba(221,221,223,0.9);
-        }
-    } 
-    .activeNavbar{
-        background-color: rgba(221,221,223,0.9);
-    }
-    #firstDivs{
-        height: 15%;
-        margin:$boxesMarginMobile;
-        #div1{
-            background-color: $red;
-            height: 60%;
-        }
-        #div2{
-            background-color: $black;
-            height: 40%;
-        }
-    }
-    #secondDivs,#thirdDivs,#textDiv,#fourthDiv,#fifthDiv,#sixthDiv,#seventhDiv,#eightDiv{
-        height: 9%;
-        margin:$boxesMarginMobile;
-        #div3,#div5,#text1,#div7,#div9,#div11,#div13,#div15{
-            float: $left;
-            width: 50%;
-            height: 100%;
-        }
-        #div4,#div5,#text1,#div8,#div10,#div11,#div13,#div16{
-            background-color: $red;
-            height: 100%;
-        }
-        #div6,#div7,#div12{
-            background-color: $blue;
-            height: 100%;
-        }
-        #text2,#div15{
-            background-color: $lightBlue;
-            height: 100%;
-        }
-        #div14,#div3,#div9{
-            background-color: $blueish;
-            height: 100%;
-        }
-    }
 }
