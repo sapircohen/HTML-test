@@ -1,0 +1,503 @@
+body {
+  margin: 0px;
+}
+
+@media (min-width: 1025px) {
+  .navbar {
+    background-color: #DDDDDF;
+  }
+  .navbar .navbar-toggle {
+    display: none;
+  }
+  .navbar .main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .navbar .main-nav li {
+    float: left;
+    content: ".";
+    -webkit-box-shadow: 7px 0px 2px -6px #A6A6A8;
+            box-shadow: 7px 0px 2px -6px #A6A6A8;
+  }
+  .navbar .main-nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .navbar .main-nav li a:hover {
+    background-color: #666;
+  }
+  .navbar .main-nav li a span {
+    border-left: 6px solid green;
+  }
+  #firstDivs, #seventhDiv {
+    height: 43.5%;
+    width: 15%;
+    float: left;
+    margin: 0% 1% 1% 2%;
+    background-color: black;
+  }
+  #secondDivs, #thirdDivs, #fifthDiv, #sixthDiv, #eightDiv, #ninethDiv {
+    height: 21%;
+    width: 38%;
+    float: left;
+    margin: 0% 1% 1% 2%;
+  }
+  #fourthDiv {
+    height: 21%;
+    width: 20%;
+    float: right;
+    margin: 0% 1% 1% 2%;
+  }
+  #div3, #div6, #div10, #div11, #div15, #div17 {
+    background-color: #FE0000;
+    width: 48%;
+    height: 99%;
+    float: left;
+  }
+  #div4, #div5, #div9, #div12, #div16, #div18 {
+    float: left;
+    background-color: #0C62B4;
+    width: 52%;
+    height: 100%;
+  }
+  #div5, #div9, #div14 {
+    background-color: #1A257A;
+  }
+  #div6, #div9, #div12, #div15, #div17 {
+    float: right;
+  }
+  #div8 {
+    background-color: #62C2C9;
+    width: 100%;
+    height: 100%;
+  }
+  #div12 {
+    background-color: #0C62B4;
+  }
+  #div13 {
+    height: 48%;
+    background-color: #FE0000;
+  }
+  #div14 {
+    height: 52%;
+  }
+  #div18 {
+    background-color: #62C2C9;
+  }
+  #seventhDiv {
+    float: right;
+    margin: 0% 1% 2% 1%;
+  }
+  #textDiv {
+    height: 21%;
+    width: 56%;
+    background-image: url("./images/Text.png");
+    background-repeat: repeat-x;
+    background-position-y: center;
+    margin: 0% 1% 2% 1%;
+    float: left;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    background-color: #fff;
+  }
+  .navbar .navbar-toggle {
+    cursor: pointer;
+    color: #2C2B32;
+    font-size: 50px;
+    margin: 10px;
+  }
+  .navbar .main-nav {
+    list-style-type: none;
+    display: none;
+    padding: 0px;
+  }
+  .navbar .main-nav li {
+    content: ".";
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .main-nav li a {
+    color: black;
+    padding: 18px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .navbar .main-nav li a:hover {
+    background-color: #676;
+  }
+  .navbar .active {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    background-color: rgba(221, 221, 223, 0.9);
+  }
+  .activeNavbar {
+    width: 30%;
+    background-color: rgba(221, 221, 223, 0.9);
+  }
+  #firstDivs, #secondDivs {
+    width: 23%;
+    height: 33%;
+    float: left;
+    margin: 0% 1% 2% 1%;
+  }
+  #firstDivs #div1, #firstDivs #div4, #secondDivs #div1, #secondDivs #div4 {
+    background-color: #FE0000;
+    height: 52%;
+  }
+  #firstDivs #div2, #firstDivs #div3, #secondDivs #div2, #secondDivs #div3 {
+    background-color: black;
+    height: 48%;
+  }
+  #firstDivs #div3, #secondDivs #div3 {
+    background-color: #0C62B4;
+  }
+  #thirdDivs, #textDiv, #fourthDiv, #fifthDiv, #sixthDiv, #seventhDiv, #eightDiv, #ninethDiv {
+    height: 17%;
+    width: 48%;
+    float: left;
+    margin: 0% 1% 2% 1%;
+  }
+  #thirdDivs #div5, #thirdDivs #div7, #thirdDivs #div9, #thirdDivs #div11, #thirdDivs #div13, #thirdDivs #div14, #thirdDivs #div15, #thirdDivs #div16, #thirdDivs #div17, #textDiv #div5, #textDiv #div7, #textDiv #div9, #textDiv #div11, #textDiv #div13, #textDiv #div14, #textDiv #div15, #textDiv #div16, #textDiv #div17, #fourthDiv #div5, #fourthDiv #div7, #fourthDiv #div9, #fourthDiv #div11, #fourthDiv #div13, #fourthDiv #div14, #fourthDiv #div15, #fourthDiv #div16, #fourthDiv #div17, #fifthDiv #div5, #fifthDiv #div7, #fifthDiv #div9, #fifthDiv #div11, #fifthDiv #div13, #fifthDiv #div14, #fifthDiv #div15, #fifthDiv #div16, #fifthDiv #div17, #sixthDiv #div5, #sixthDiv #div7, #sixthDiv #div9, #sixthDiv #div11, #sixthDiv #div13, #sixthDiv #div14, #sixthDiv #div15, #sixthDiv #div16, #sixthDiv #div17, #seventhDiv #div5, #seventhDiv #div7, #seventhDiv #div9, #seventhDiv #div11, #seventhDiv #div13, #seventhDiv #div14, #seventhDiv #div15, #seventhDiv #div16, #seventhDiv #div17, #eightDiv #div5, #eightDiv #div7, #eightDiv #div9, #eightDiv #div11, #eightDiv #div13, #eightDiv #div14, #eightDiv #div15, #eightDiv #div16, #eightDiv #div17, #ninethDiv #div5, #ninethDiv #div7, #ninethDiv #div9, #ninethDiv #div11, #ninethDiv #div13, #ninethDiv #div14, #ninethDiv #div15, #ninethDiv #div16, #ninethDiv #div17 {
+    float: left;
+    width: 52%;
+    height: 100%;
+    background-color: #1A257A;
+  }
+  #thirdDivs #div6, #thirdDivs #div7, #thirdDivs #div8, #thirdDivs #div9, #thirdDivs #div10, #thirdDivs #div12, #thirdDivs #div13, #thirdDivs #div15, #thirdDivs #div18, #textDiv #div6, #textDiv #div7, #textDiv #div8, #textDiv #div9, #textDiv #div10, #textDiv #div12, #textDiv #div13, #textDiv #div15, #textDiv #div18, #fourthDiv #div6, #fourthDiv #div7, #fourthDiv #div8, #fourthDiv #div9, #fourthDiv #div10, #fourthDiv #div12, #fourthDiv #div13, #fourthDiv #div15, #fourthDiv #div18, #fifthDiv #div6, #fifthDiv #div7, #fifthDiv #div8, #fifthDiv #div9, #fifthDiv #div10, #fifthDiv #div12, #fifthDiv #div13, #fifthDiv #div15, #fifthDiv #div18, #sixthDiv #div6, #sixthDiv #div7, #sixthDiv #div8, #sixthDiv #div9, #sixthDiv #div10, #sixthDiv #div12, #sixthDiv #div13, #sixthDiv #div15, #sixthDiv #div18, #seventhDiv #div6, #seventhDiv #div7, #seventhDiv #div8, #seventhDiv #div9, #seventhDiv #div10, #seventhDiv #div12, #seventhDiv #div13, #seventhDiv #div15, #seventhDiv #div18, #eightDiv #div6, #eightDiv #div7, #eightDiv #div8, #eightDiv #div9, #eightDiv #div10, #eightDiv #div12, #eightDiv #div13, #eightDiv #div15, #eightDiv #div18, #ninethDiv #div6, #ninethDiv #div7, #ninethDiv #div8, #ninethDiv #div9, #ninethDiv #div10, #ninethDiv #div12, #ninethDiv #div13, #ninethDiv #div15, #ninethDiv #div18 {
+    background-color: #FE0000;
+    height: 100%;
+  }
+  #thirdDivs #div7, #thirdDivs #div9, #thirdDivs #div13, #thirdDivs #div15, #textDiv #div7, #textDiv #div9, #textDiv #div13, #textDiv #div15, #fourthDiv #div7, #fourthDiv #div9, #fourthDiv #div13, #fourthDiv #div15, #fifthDiv #div7, #fifthDiv #div9, #fifthDiv #div13, #fifthDiv #div15, #sixthDiv #div7, #sixthDiv #div9, #sixthDiv #div13, #sixthDiv #div15, #seventhDiv #div7, #seventhDiv #div9, #seventhDiv #div13, #seventhDiv #div15, #eightDiv #div7, #eightDiv #div9, #eightDiv #div13, #eightDiv #div15, #ninethDiv #div7, #ninethDiv #div9, #ninethDiv #div13, #ninethDiv #div15 {
+    width: 48%;
+  }
+  #thirdDivs #div8, #thirdDivs #div17, #textDiv #div8, #textDiv #div17, #fourthDiv #div8, #fourthDiv #div17, #fifthDiv #div8, #fifthDiv #div17, #sixthDiv #div8, #sixthDiv #div17, #seventhDiv #div8, #seventhDiv #div17, #eightDiv #div8, #eightDiv #div17, #ninethDiv #div8, #ninethDiv #div17 {
+    background-color: #62C2C9;
+  }
+  #thirdDivs #div10, #textDiv #div10, #fourthDiv #div10, #fifthDiv #div10, #sixthDiv #div10, #seventhDiv #div10, #eightDiv #div10, #ninethDiv #div10 {
+    background-color: #1A257A;
+  }
+  #thirdDivs #div11, #thirdDivs #div16, #textDiv #div11, #textDiv #div16, #fourthDiv #div11, #fourthDiv #div16, #fifthDiv #div11, #fifthDiv #div16, #sixthDiv #div11, #sixthDiv #div16, #seventhDiv #div11, #seventhDiv #div16, #eightDiv #div11, #eightDiv #div16, #ninethDiv #div11, #ninethDiv #div16 {
+    background-color: #0C62B4;
+  }
+  #textDiv {
+    background: url("./images/Text2.png") no-repeat center;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .navbar {
+    background-color: #fff;
+  }
+  .navbar .navbar-toggle {
+    cursor: pointer;
+    color: #2C2B32;
+    font-size: 50px;
+    margin: 10px;
+  }
+  .navbar .main-nav {
+    list-style-type: none;
+    display: none;
+    padding: 0px;
+  }
+  .navbar .main-nav li {
+    content: ".";
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .main-nav li a {
+    color: black;
+    padding: 18px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .navbar .main-nav li a:hover {
+    background-color: #676;
+  }
+  .navbar .active {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    background-color: rgba(221, 221, 223, 0.9);
+  }
+  .activeNavbar {
+    width: 30%;
+    background-color: rgba(221, 221, 223, 0.9);
+  }
+  #firstDivs, #secondDivs {
+    width: 23%;
+    height: 33%;
+    float: left;
+    margin: 0% 1% 2% 1%;
+  }
+  #firstDivs #div1, #firstDivs #div4, #secondDivs #div1, #secondDivs #div4 {
+    background-color: #FE0000;
+    height: 52%;
+  }
+  #firstDivs #div2, #firstDivs #div3, #secondDivs #div2, #secondDivs #div3 {
+    background-color: black;
+    height: 48%;
+  }
+  #firstDivs #div3, #secondDivs #div3 {
+    background-color: #0C62B4;
+  }
+  #thirdDivs, #textDiv, #fourthDiv, #fifthDiv, #sixthDiv, #seventhDiv, #eightDiv, #ninethDiv {
+    height: 16.5%;
+    width: 48%;
+    float: left;
+    margin: 0% 1% 2% 1%;
+  }
+  #thirdDivs #div5, #thirdDivs #div7, #thirdDivs #div9, #thirdDivs #div11, #thirdDivs #div13, #thirdDivs #div14, #thirdDivs #div15, #thirdDivs #div16, #thirdDivs #div17, #textDiv #div5, #textDiv #div7, #textDiv #div9, #textDiv #div11, #textDiv #div13, #textDiv #div14, #textDiv #div15, #textDiv #div16, #textDiv #div17, #fourthDiv #div5, #fourthDiv #div7, #fourthDiv #div9, #fourthDiv #div11, #fourthDiv #div13, #fourthDiv #div14, #fourthDiv #div15, #fourthDiv #div16, #fourthDiv #div17, #fifthDiv #div5, #fifthDiv #div7, #fifthDiv #div9, #fifthDiv #div11, #fifthDiv #div13, #fifthDiv #div14, #fifthDiv #div15, #fifthDiv #div16, #fifthDiv #div17, #sixthDiv #div5, #sixthDiv #div7, #sixthDiv #div9, #sixthDiv #div11, #sixthDiv #div13, #sixthDiv #div14, #sixthDiv #div15, #sixthDiv #div16, #sixthDiv #div17, #seventhDiv #div5, #seventhDiv #div7, #seventhDiv #div9, #seventhDiv #div11, #seventhDiv #div13, #seventhDiv #div14, #seventhDiv #div15, #seventhDiv #div16, #seventhDiv #div17, #eightDiv #div5, #eightDiv #div7, #eightDiv #div9, #eightDiv #div11, #eightDiv #div13, #eightDiv #div14, #eightDiv #div15, #eightDiv #div16, #eightDiv #div17, #ninethDiv #div5, #ninethDiv #div7, #ninethDiv #div9, #ninethDiv #div11, #ninethDiv #div13, #ninethDiv #div14, #ninethDiv #div15, #ninethDiv #div16, #ninethDiv #div17 {
+    float: left;
+    width: 52%;
+    height: 100%;
+    background-color: #1A257A;
+  }
+  #thirdDivs #div6, #thirdDivs #div7, #thirdDivs #div8, #thirdDivs #div9, #thirdDivs #div10, #thirdDivs #div12, #thirdDivs #div13, #thirdDivs #div15, #thirdDivs #div18, #textDiv #div6, #textDiv #div7, #textDiv #div8, #textDiv #div9, #textDiv #div10, #textDiv #div12, #textDiv #div13, #textDiv #div15, #textDiv #div18, #fourthDiv #div6, #fourthDiv #div7, #fourthDiv #div8, #fourthDiv #div9, #fourthDiv #div10, #fourthDiv #div12, #fourthDiv #div13, #fourthDiv #div15, #fourthDiv #div18, #fifthDiv #div6, #fifthDiv #div7, #fifthDiv #div8, #fifthDiv #div9, #fifthDiv #div10, #fifthDiv #div12, #fifthDiv #div13, #fifthDiv #div15, #fifthDiv #div18, #sixthDiv #div6, #sixthDiv #div7, #sixthDiv #div8, #sixthDiv #div9, #sixthDiv #div10, #sixthDiv #div12, #sixthDiv #div13, #sixthDiv #div15, #sixthDiv #div18, #seventhDiv #div6, #seventhDiv #div7, #seventhDiv #div8, #seventhDiv #div9, #seventhDiv #div10, #seventhDiv #div12, #seventhDiv #div13, #seventhDiv #div15, #seventhDiv #div18, #eightDiv #div6, #eightDiv #div7, #eightDiv #div8, #eightDiv #div9, #eightDiv #div10, #eightDiv #div12, #eightDiv #div13, #eightDiv #div15, #eightDiv #div18, #ninethDiv #div6, #ninethDiv #div7, #ninethDiv #div8, #ninethDiv #div9, #ninethDiv #div10, #ninethDiv #div12, #ninethDiv #div13, #ninethDiv #div15, #ninethDiv #div18 {
+    background-color: #FE0000;
+    height: 100%;
+  }
+  #thirdDivs #div7, #thirdDivs #div9, #thirdDivs #div13, #thirdDivs #div15, #textDiv #div7, #textDiv #div9, #textDiv #div13, #textDiv #div15, #fourthDiv #div7, #fourthDiv #div9, #fourthDiv #div13, #fourthDiv #div15, #fifthDiv #div7, #fifthDiv #div9, #fifthDiv #div13, #fifthDiv #div15, #sixthDiv #div7, #sixthDiv #div9, #sixthDiv #div13, #sixthDiv #div15, #seventhDiv #div7, #seventhDiv #div9, #seventhDiv #div13, #seventhDiv #div15, #eightDiv #div7, #eightDiv #div9, #eightDiv #div13, #eightDiv #div15, #ninethDiv #div7, #ninethDiv #div9, #ninethDiv #div13, #ninethDiv #div15 {
+    width: 48%;
+  }
+  #thirdDivs #div8, #thirdDivs #div17, #textDiv #div8, #textDiv #div17, #fourthDiv #div8, #fourthDiv #div17, #fifthDiv #div8, #fifthDiv #div17, #sixthDiv #div8, #sixthDiv #div17, #seventhDiv #div8, #seventhDiv #div17, #eightDiv #div8, #eightDiv #div17, #ninethDiv #div8, #ninethDiv #div17 {
+    background-color: #62C2C9;
+  }
+  #thirdDivs #div10, #textDiv #div10, #fourthDiv #div10, #fifthDiv #div10, #sixthDiv #div10, #seventhDiv #div10, #eightDiv #div10, #ninethDiv #div10 {
+    background-color: #1A257A;
+  }
+  #thirdDivs #div11, #thirdDivs #div16, #textDiv #div11, #textDiv #div16, #fourthDiv #div11, #fourthDiv #div16, #fifthDiv #div11, #fifthDiv #div16, #sixthDiv #div11, #sixthDiv #div16, #seventhDiv #div11, #seventhDiv #div16, #eightDiv #div11, #eightDiv #div16, #ninethDiv #div11, #ninethDiv #div16 {
+    background-color: #0C62B4;
+  }
+  #textDiv {
+    background: url("./images/Text2.png") no-repeat center;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbar {
+    background-color: #fff;
+  }
+  .navbar .navbar-toggle {
+    cursor: pointer;
+    color: #2C2B32;
+    font-size: 50px;
+    margin: 10px;
+  }
+  .navbar .main-nav {
+    list-style-type: none;
+    display: none;
+    padding: 0px;
+  }
+  .navbar .main-nav li {
+    content: ".";
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .main-nav li a {
+    color: black;
+    padding: 18px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .navbar .main-nav li a:hover {
+    background-color: #676;
+  }
+  .navbar .active {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    background-color: rgba(221, 221, 223, 0.9);
+  }
+  .activeNavbar {
+    width: 30%;
+    background-color: rgba(221, 221, 223, 0.9);
+  }
+  #firstDivs, #secondDivs {
+    width: 23%;
+    height: 33%;
+    float: left;
+    margin: 0% 1% 2% 1%;
+  }
+  #firstDivs #div1, #firstDivs #div4, #secondDivs #div1, #secondDivs #div4 {
+    background-color: #FE0000;
+    height: 52%;
+  }
+  #firstDivs #div2, #firstDivs #div3, #secondDivs #div2, #secondDivs #div3 {
+    background-color: black;
+    height: 48%;
+  }
+  #firstDivs #div3, #secondDivs #div3 {
+    background-color: #0C62B4;
+  }
+  #thirdDivs, #textDiv, #fourthDiv, #fifthDiv, #sixthDiv, #seventhDiv, #eightDiv, #ninethDiv {
+    height: 17%;
+    width: 48%;
+    float: left;
+    margin: 0% 1% 2% 1%;
+  }
+  #thirdDivs #div5, #thirdDivs #div7, #thirdDivs #div9, #thirdDivs #div11, #thirdDivs #div13, #thirdDivs #div14, #thirdDivs #div15, #thirdDivs #div16, #thirdDivs #div17, #textDiv #div5, #textDiv #div7, #textDiv #div9, #textDiv #div11, #textDiv #div13, #textDiv #div14, #textDiv #div15, #textDiv #div16, #textDiv #div17, #fourthDiv #div5, #fourthDiv #div7, #fourthDiv #div9, #fourthDiv #div11, #fourthDiv #div13, #fourthDiv #div14, #fourthDiv #div15, #fourthDiv #div16, #fourthDiv #div17, #fifthDiv #div5, #fifthDiv #div7, #fifthDiv #div9, #fifthDiv #div11, #fifthDiv #div13, #fifthDiv #div14, #fifthDiv #div15, #fifthDiv #div16, #fifthDiv #div17, #sixthDiv #div5, #sixthDiv #div7, #sixthDiv #div9, #sixthDiv #div11, #sixthDiv #div13, #sixthDiv #div14, #sixthDiv #div15, #sixthDiv #div16, #sixthDiv #div17, #seventhDiv #div5, #seventhDiv #div7, #seventhDiv #div9, #seventhDiv #div11, #seventhDiv #div13, #seventhDiv #div14, #seventhDiv #div15, #seventhDiv #div16, #seventhDiv #div17, #eightDiv #div5, #eightDiv #div7, #eightDiv #div9, #eightDiv #div11, #eightDiv #div13, #eightDiv #div14, #eightDiv #div15, #eightDiv #div16, #eightDiv #div17, #ninethDiv #div5, #ninethDiv #div7, #ninethDiv #div9, #ninethDiv #div11, #ninethDiv #div13, #ninethDiv #div14, #ninethDiv #div15, #ninethDiv #div16, #ninethDiv #div17 {
+    float: left;
+    width: 52%;
+    height: 100%;
+    background-color: #1A257A;
+  }
+  #thirdDivs #div6, #thirdDivs #div7, #thirdDivs #div8, #thirdDivs #div9, #thirdDivs #div10, #thirdDivs #div12, #thirdDivs #div13, #thirdDivs #div15, #thirdDivs #div18, #textDiv #div6, #textDiv #div7, #textDiv #div8, #textDiv #div9, #textDiv #div10, #textDiv #div12, #textDiv #div13, #textDiv #div15, #textDiv #div18, #fourthDiv #div6, #fourthDiv #div7, #fourthDiv #div8, #fourthDiv #div9, #fourthDiv #div10, #fourthDiv #div12, #fourthDiv #div13, #fourthDiv #div15, #fourthDiv #div18, #fifthDiv #div6, #fifthDiv #div7, #fifthDiv #div8, #fifthDiv #div9, #fifthDiv #div10, #fifthDiv #div12, #fifthDiv #div13, #fifthDiv #div15, #fifthDiv #div18, #sixthDiv #div6, #sixthDiv #div7, #sixthDiv #div8, #sixthDiv #div9, #sixthDiv #div10, #sixthDiv #div12, #sixthDiv #div13, #sixthDiv #div15, #sixthDiv #div18, #seventhDiv #div6, #seventhDiv #div7, #seventhDiv #div8, #seventhDiv #div9, #seventhDiv #div10, #seventhDiv #div12, #seventhDiv #div13, #seventhDiv #div15, #seventhDiv #div18, #eightDiv #div6, #eightDiv #div7, #eightDiv #div8, #eightDiv #div9, #eightDiv #div10, #eightDiv #div12, #eightDiv #div13, #eightDiv #div15, #eightDiv #div18, #ninethDiv #div6, #ninethDiv #div7, #ninethDiv #div8, #ninethDiv #div9, #ninethDiv #div10, #ninethDiv #div12, #ninethDiv #div13, #ninethDiv #div15, #ninethDiv #div18 {
+    background-color: #FE0000;
+    height: 100%;
+  }
+  #thirdDivs #div7, #thirdDivs #div9, #thirdDivs #div13, #thirdDivs #div15, #textDiv #div7, #textDiv #div9, #textDiv #div13, #textDiv #div15, #fourthDiv #div7, #fourthDiv #div9, #fourthDiv #div13, #fourthDiv #div15, #fifthDiv #div7, #fifthDiv #div9, #fifthDiv #div13, #fifthDiv #div15, #sixthDiv #div7, #sixthDiv #div9, #sixthDiv #div13, #sixthDiv #div15, #seventhDiv #div7, #seventhDiv #div9, #seventhDiv #div13, #seventhDiv #div15, #eightDiv #div7, #eightDiv #div9, #eightDiv #div13, #eightDiv #div15, #ninethDiv #div7, #ninethDiv #div9, #ninethDiv #div13, #ninethDiv #div15 {
+    width: 48%;
+  }
+  #thirdDivs #div8, #thirdDivs #div17, #textDiv #div8, #textDiv #div17, #fourthDiv #div8, #fourthDiv #div17, #fifthDiv #div8, #fifthDiv #div17, #sixthDiv #div8, #sixthDiv #div17, #seventhDiv #div8, #seventhDiv #div17, #eightDiv #div8, #eightDiv #div17, #ninethDiv #div8, #ninethDiv #div17 {
+    background-color: #62C2C9;
+  }
+  #thirdDivs #div10, #textDiv #div10, #fourthDiv #div10, #fifthDiv #div10, #sixthDiv #div10, #seventhDiv #div10, #eightDiv #div10, #ninethDiv #div10 {
+    background-color: #1A257A;
+  }
+  #thirdDivs #div11, #thirdDivs #div16, #textDiv #div11, #textDiv #div16, #fourthDiv #div11, #fourthDiv #div16, #fifthDiv #div11, #fifthDiv #div16, #sixthDiv #div11, #sixthDiv #div16, #seventhDiv #div11, #seventhDiv #div16, #eightDiv #div11, #eightDiv #div16, #ninethDiv #div11, #ninethDiv #div16 {
+    background-color: #0C62B4;
+  }
+  #textDiv {
+    background: url("./images/Text2.png") no-repeat center;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 0px) and (max-width: 480px) {
+  .navbar {
+    background-color: #fff;
+  }
+  .navbar .navbar-toggle {
+    cursor: pointer;
+    color: #2C2B32;
+    font-size: 30px;
+    margin: 10px;
+  }
+  .navbar .main-nav {
+    list-style-type: none;
+    display: none;
+    padding: 0px;
+  }
+  .navbar .main-nav li {
+    content: ".";
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .main-nav li a {
+    color: black;
+    padding: 18px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .navbar .main-nav li a:hover {
+    background-color: #676;
+  }
+  .navbar .active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    background-color: rgba(221, 221, 223, 0.9);
+  }
+  .activeNavbar {
+    background-color: rgba(221, 221, 223, 0.9);
+  }
+  #firstDivs {
+    height: 15%;
+    margin: 0% 2% 5% 2%;
+  }
+  #firstDivs #div1 {
+    background-color: #FE0000;
+    height: 60%;
+  }
+  #firstDivs #div2 {
+    background-color: black;
+    height: 40%;
+  }
+  #secondDivs, #thirdDivs, #textDiv, #fourthDiv, #fifthDiv, #sixthDiv, #seventhDiv, #eightDiv {
+    height: 9%;
+    margin: 0% 2% 5% 2%;
+  }
+  #secondDivs #div3, #secondDivs #div5, #secondDivs #text1, #secondDivs #div7, #secondDivs #div9, #secondDivs #div11, #secondDivs #div13, #secondDivs #div15, #thirdDivs #div3, #thirdDivs #div5, #thirdDivs #text1, #thirdDivs #div7, #thirdDivs #div9, #thirdDivs #div11, #thirdDivs #div13, #thirdDivs #div15, #textDiv #div3, #textDiv #div5, #textDiv #text1, #textDiv #div7, #textDiv #div9, #textDiv #div11, #textDiv #div13, #textDiv #div15, #fourthDiv #div3, #fourthDiv #div5, #fourthDiv #text1, #fourthDiv #div7, #fourthDiv #div9, #fourthDiv #div11, #fourthDiv #div13, #fourthDiv #div15, #fifthDiv #div3, #fifthDiv #div5, #fifthDiv #text1, #fifthDiv #div7, #fifthDiv #div9, #fifthDiv #div11, #fifthDiv #div13, #fifthDiv #div15, #sixthDiv #div3, #sixthDiv #div5, #sixthDiv #text1, #sixthDiv #div7, #sixthDiv #div9, #sixthDiv #div11, #sixthDiv #div13, #sixthDiv #div15, #seventhDiv #div3, #seventhDiv #div5, #seventhDiv #text1, #seventhDiv #div7, #seventhDiv #div9, #seventhDiv #div11, #seventhDiv #div13, #seventhDiv #div15, #eightDiv #div3, #eightDiv #div5, #eightDiv #text1, #eightDiv #div7, #eightDiv #div9, #eightDiv #div11, #eightDiv #div13, #eightDiv #div15 {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+  #secondDivs #div4, #secondDivs #div5, #secondDivs #text1, #secondDivs #div8, #secondDivs #div10, #secondDivs #div11, #secondDivs #div13, #secondDivs #div16, #thirdDivs #div4, #thirdDivs #div5, #thirdDivs #text1, #thirdDivs #div8, #thirdDivs #div10, #thirdDivs #div11, #thirdDivs #div13, #thirdDivs #div16, #textDiv #div4, #textDiv #div5, #textDiv #text1, #textDiv #div8, #textDiv #div10, #textDiv #div11, #textDiv #div13, #textDiv #div16, #fourthDiv #div4, #fourthDiv #div5, #fourthDiv #text1, #fourthDiv #div8, #fourthDiv #div10, #fourthDiv #div11, #fourthDiv #div13, #fourthDiv #div16, #fifthDiv #div4, #fifthDiv #div5, #fifthDiv #text1, #fifthDiv #div8, #fifthDiv #div10, #fifthDiv #div11, #fifthDiv #div13, #fifthDiv #div16, #sixthDiv #div4, #sixthDiv #div5, #sixthDiv #text1, #sixthDiv #div8, #sixthDiv #div10, #sixthDiv #div11, #sixthDiv #div13, #sixthDiv #div16, #seventhDiv #div4, #seventhDiv #div5, #seventhDiv #text1, #seventhDiv #div8, #seventhDiv #div10, #seventhDiv #div11, #seventhDiv #div13, #seventhDiv #div16, #eightDiv #div4, #eightDiv #div5, #eightDiv #text1, #eightDiv #div8, #eightDiv #div10, #eightDiv #div11, #eightDiv #div13, #eightDiv #div16 {
+    background-color: #FE0000;
+    height: 100%;
+  }
+  #secondDivs #div6, #secondDivs #div7, #secondDivs #div12, #thirdDivs #div6, #thirdDivs #div7, #thirdDivs #div12, #textDiv #div6, #textDiv #div7, #textDiv #div12, #fourthDiv #div6, #fourthDiv #div7, #fourthDiv #div12, #fifthDiv #div6, #fifthDiv #div7, #fifthDiv #div12, #sixthDiv #div6, #sixthDiv #div7, #sixthDiv #div12, #seventhDiv #div6, #seventhDiv #div7, #seventhDiv #div12, #eightDiv #div6, #eightDiv #div7, #eightDiv #div12 {
+    background-color: #1A257A;
+    height: 100%;
+  }
+  #secondDivs #text2, #secondDivs #div15, #thirdDivs #text2, #thirdDivs #div15, #textDiv #text2, #textDiv #div15, #fourthDiv #text2, #fourthDiv #div15, #fifthDiv #text2, #fifthDiv #div15, #sixthDiv #text2, #sixthDiv #div15, #seventhDiv #text2, #seventhDiv #div15, #eightDiv #text2, #eightDiv #div15 {
+    background-color: #62C2C9;
+    height: 100%;
+  }
+  #secondDivs #div14, #secondDivs #div3, #secondDivs #div9, #thirdDivs #div14, #thirdDivs #div3, #thirdDivs #div9, #textDiv #div14, #textDiv #div3, #textDiv #div9, #fourthDiv #div14, #fourthDiv #div3, #fourthDiv #div9, #fifthDiv #div14, #fifthDiv #div3, #fifthDiv #div9, #sixthDiv #div14, #sixthDiv #div3, #sixthDiv #div9, #seventhDiv #div14, #seventhDiv #div3, #seventhDiv #div9, #eightDiv #div14, #eightDiv #div3, #eightDiv #div9 {
+    background-color: #0C62B4;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
