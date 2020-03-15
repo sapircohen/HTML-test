@@ -48,6 +48,7 @@
         background-color: rgba(221,221,223,0.9);
     }
     #firstDivs{
+        overflow: hidden;
         height: 18%;
         margin:$boxesMarginMobile;
         #div1{
@@ -62,6 +63,7 @@
     #secondDivs,#thirdDivs,#textDiv,#fourthDiv,#fifthDiv,#sixthDiv,#seventhDiv,#eightDiv{
         height: 8.7%;
         margin:$boxesMarginMobile;
+        overflow: hidden;
         #div3,#div5,#text1,#div7,#div9,#div11,#div13,#div15{
             float: $left;
             width: 50%;
