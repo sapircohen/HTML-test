@@ -1,3 +1,4 @@
+@import './Variables.scss';
 @media (min-width: $breakpoint-desktopAndLaptops) {
     .navbar{
         background-color: #DDDDDF;
@@ -91,7 +92,6 @@
         margin: $boxesMargin;
     }
     #textDiv{
-        //threeInABox boxesMargin left
         height: 21%;
         width: 56%;
         background-image: url('../images/Text.png');

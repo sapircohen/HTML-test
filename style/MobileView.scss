@@ -2,6 +2,7 @@
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
+@import './Variables.scss';
 
 @media (min-width: 0px) and (max-width: 480px) {
   
@@ -10,7 +11,7 @@
         .navbar-toggle {
             cursor: pointer; 
             color:#2C2B32;
-            font-size: 30px;
+            font-size: 20px;
             margin: 10px;
         }
         .main-nav {
@@ -47,7 +48,7 @@
         background-color: rgba(221,221,223,0.9);
     }
     #firstDivs{
-        height: 15%;
+        height: 18%;
         margin:$boxesMarginMobile;
         #div1{
             background-color: $red;
@@ -59,7 +60,7 @@
         }
     }
     #secondDivs,#thirdDivs,#textDiv,#fourthDiv,#fifthDiv,#sixthDiv,#seventhDiv,#eightDiv{
-        height: 9%;
+        height: 8.7%;
         margin:$boxesMarginMobile;
         #div3,#div5,#text1,#div7,#div9,#div11,#div13,#div15{
             float: $left;

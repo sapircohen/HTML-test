@@ -1,0 +1,103 @@
+@media (min-width: 1025px) {
+  .navbar {
+    background-color: #DDDDDF;
+  }
+  .navbar .navbar-toggle {
+    display: none;
+  }
+  .navbar .main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .navbar .main-nav li {
+    float: left;
+    content: ".";
+    -webkit-box-shadow: 7px 0px 2px -6px #A6A6A8;
+            box-shadow: 7px 0px 2px -6px #A6A6A8;
+  }
+  .navbar .main-nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .navbar .main-nav li a:hover {
+    background-color: #666;
+  }
+  .navbar .main-nav li a span {
+    border-left: 6px solid green;
+  }
+  #firstDivs, #seventhDiv {
+    height: 43.5%;
+    width: 15%;
+    float: left;
+    margin: 0% 1% 1% 2%;
+    background-color: black;
+  }
+  #secondDivs, #thirdDivs, #fifthDiv, #sixthDiv, #eightDiv, #ninethDiv {
+    height: 21%;
+    width: 38%;
+    float: left;
+    margin: 0% 1% 1% 2%;
+  }
+  #fourthDiv {
+    height: 21%;
+    width: 20%;
+    float: right;
+    margin: 0% 1% 1% 2%;
+  }
+  #div3, #div6, #div10, #div11, #div15, #div17 {
+    background-color: #FE0000;
+    width: 48%;
+    height: 99%;
+    float: left;
+  }
+  #div4, #div5, #div9, #div12, #div16, #div18 {
+    float: left;
+    background-color: #0C62B4;
+    width: 52%;
+    height: 100%;
+  }
+  #div5, #div9, #div14 {
+    background-color: #1A257A;
+  }
+  #div6, #div9, #div12, #div15, #div17 {
+    float: right;
+  }
+  #div8 {
+    background-color: #62C2C9;
+    width: 100%;
+    height: 100%;
+  }
+  #div12 {
+    background-color: #0C62B4;
+  }
+  #div13 {
+    height: 48%;
+    background-color: #FE0000;
+  }
+  #div14 {
+    height: 52%;
+  }
+  #div18 {
+    background-color: #62C2C9;
+  }
+  #seventhDiv {
+    float: right;
+    margin: 0% 1% 2% 1%;
+  }
+  #textDiv {
+    height: 21%;
+    width: 56%;
+    background-image: url("../images/Text.png");
+    background-repeat: repeat-x;
+    background-position-y: center;
+    margin: 0% 1% 2% 1%;
+    float: left;
+  }
+}
+/*# sourceMappingURL=DesktopView.css.map */

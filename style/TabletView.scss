@@ -2,7 +2,7 @@
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
-
+@import './Variables.scss';
 @media (min-width: 768px) and (max-width: 1024px)  {
     .navbar{
         background-color: #fff;
@@ -36,7 +36,7 @@
         }
         .active {
             position: absolute;
-            width: 30%;
+            width: 45%;
             height: 100%;
             display: block;
             margin: 0;
@@ -44,12 +44,12 @@
         }
     } 
     .activeNavbar{
-        width: 30%;
+        width: 45%;
         background-color: rgba(221,221,223,0.9);
     }
     #firstDivs,#secondDivs{
         width: 23%;
-        height: 33%;
+        height: 34%;
         float: $left;
         margin: $boxesMargin;
         #div1,#div4{
@@ -65,7 +65,7 @@
         }
     }
     #thirdDivs,#textDiv,#fourthDiv,#fifthDiv,#sixthDiv,#seventhDiv,#eightDiv,#ninethDiv{
-        height: 17%;
+        height: 16%;
         width: 48%;
         float: $left;
         margin: $boxesMargin;
@@ -134,7 +134,7 @@
         }
         .active {
             position: absolute;
-            width: 30%;
+            width: 45%;
             height: 100%;
             display: block;
             margin: 0;
@@ -142,12 +142,12 @@
         }
     } 
     .activeNavbar{
-        width: 30%;
+        width: 45%;
         background-color: rgba(221,221,223,0.9);
     }
     #firstDivs,#secondDivs{
         width: 23%;
-        height: 33%;
+        height: 34%;
         float: $left;
         margin: $boxesMargin;
         #div1,#div4{
@@ -163,7 +163,7 @@
         }
     }
     #thirdDivs,#textDiv,#fourthDiv,#fifthDiv,#sixthDiv,#seventhDiv,#eightDiv,#ninethDiv{
-        height: 16.5%;
+        height: 16%;
         width: 48%;
         float: $left;
         margin: $boxesMargin;
@@ -231,7 +231,7 @@
         }
         .active {
             position: absolute;
-            width: 30%;
+            width: 45%;
             height: 100%;
             display: block;
             margin: 0;
@@ -239,7 +239,7 @@
         }
     } 
     .activeNavbar{
-        width: 30%;
+        width: 45%;
         background-color: rgba(221,221,223,0.9);
     }
     #firstDivs,#secondDivs{
@@ -260,7 +260,7 @@
         }
     }
     #thirdDivs,#textDiv,#fourthDiv,#fifthDiv,#sixthDiv,#seventhDiv,#eightDiv,#ninethDiv{
-        height: 17%;
+        height: 16.5%;
         width: 48%;
         float: $left;
         margin: $boxesMargin;
